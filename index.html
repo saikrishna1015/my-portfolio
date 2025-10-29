@@ -3,73 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burra Sai Krishna | Supply Chain Professional</title>
+  <title>Sai Krishna Burra | Supply Chain Management</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f8fafc;
-      color: #1e293b;
-    }
-    header {
-      background-color: #0ea5a4;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0a2540, #174a84);
       color: white;
-      text-align: center;
-      padding: 30px 0;
+      overflow-x: hidden;
     }
+
+    header {
+      background: rgba(0,0,0,0.3);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #00e5ff;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .intro {
+
+    .hero {
       text-align: center;
-      margin-top: 50px;
-    }
-    .intro img {
-      width: 150px;
-      border-radius: 50%;
-    }
-    .intro h1 {
-      color: #0f172a;
-    }
-    .intro p {
-      color: #475569;
-    }
-    button {
-      background: #0ea5a4;
+      padding: 100px 20px;
+      background: url('https://cdn.pixabay.com/photo/2018/09/19/12/58/logistics-3686010_1280.jpg') center/cover no-repeat;
       color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
+      position: relative;
     }
-    button:hover {
-      background-color: #0c8685;
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
     }
+
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 60px 50px;
+    }
+
+    .card {
+      background: white;
+      color: #174a84;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      color: #0a2540;
+    }
+
     footer {
-      background: #0f172a;
-      color: #94a3b8;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
+      background: rgba(255,255,255,0.1);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Burra Sai Krishna</h1>
-    <p>Supply Chain & Procurement Professional</p>
+    <h1>Sai Krishna</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -78,17 +112,31 @@
     </nav>
   </header>
 
-  <section class="intro">
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Photo">
-    <h1>Hello 👋, I'm Sai Krishna</h1>
-    <p>I’m a Supply Chain professional with 6 years of experience in logistics operations, procurement, and process improvement.</p>
-    <p>Previously worked with <b>Amazon</b> and <b>Accenture</b> — managing hub-spoke, drop-ship, and reverse logistics models.</p>
-    <a href="projects.html"><button>See My Work</button></a>
+  <section class="hero">
+    <h2>Supply Chain Management Professional</h2>
+    <p>6+ Years of experience in Logistics, Procurement, and Process Optimization</p>
   </section>
 
-  <footer>
-    © 2025 Burra Sai Krishna | Supply Chain Portfolio
-  </footer>
+  <section class="cards">
+    <div class="card">
+      <h3>Procurement</h3>
+      <p>Expertise in vendor management, sourcing, and negotiation to achieve cost efficiency and timely delivery.</p>
+    </div>
 
-</body>
-</html>
+    <div class="card">
+      <h3>Logistics</h3>
+      <p>Hands-on experience with Hub-Spoke, Drop-Ship, and Reverse Logistics models to streamline supply operations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Process Improvement</h3>
+      <p>Driving data-backed improvements to enhance visibility, reduce costs, and increase productivity.</p>
+    </div>
+
+    <div class="card">
+      <h3>Technology Integration</h3>
+      <p>Leveraging ERP, B2B tools, and analytics dashboards to improve accuracy and end-to-end visibility.</p>
+    </div>
+  </section>
+
+  <foo
